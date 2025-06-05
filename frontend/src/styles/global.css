@@ -1,0 +1,96 @@
+/* Global style CSS file */
+/* I imported Tailwind CSS here for styling */
+@import "tailwindcss";
+
+/* 
+These are the default styles that you will be using.
+:root => This is the root element of your application, i.e. everything inside the <html> tag
+*/
+:root {
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* If you want to have all <a> tags to have the same style, you can preset it here */
+a {
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: inherit;
+}
+/* This is when you hover the <a> tag, text color will change accordingly */
+a:hover {
+  color: #535bf2;
+  cursor: pointer;
+}
+
+p {
+  padding: calc(var(--spacing) * 1);
+}
+
+pre {
+  background-color: black;
+  padding: calc(var(--spacing) * 4);
+  border-radius: var(--radius-lg);
+  color: white;
+  font-size: var(--text-sm) /* 0.875rem = 14px */;
+  line-height: var(
+    --tw-leading,
+    var(--text-sm--line-height) /* calc(1.25 / 0.875) ≈ 1.4286 */
+  );
+  overflow-x: auto;
+}
+
+code {
+  background-color: #1c398e;
+  color: #dbeafe;
+  padding-inline: calc(var(--spacing) * 1);
+  margin-inline: calc(var(--spacing) * 1);
+}
+
+button {
+  background-color: #1c398e;
+  color: #dbeafe;
+  font-size: large;
+  padding: calc(var(--spacing) * 3);
+  border-radius: var(--radius-lg);
+}
+
+button:hover {
+  background-color: #1e40af;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+blockquote {
+  margin: calc(var(--spacing) * 3);
+  border-style: var(--tw-border-style);
+  border-width: 1px;
+  padding: calc(var(--spacing) * 3);
+}
+
+@property --tw-border-style {
+  syntax: "*";
+  inherits: false;
+  initial-value: solid;
+}
+
+/* If the prefer color-scheme is light, will overwrites to what you have changed here */
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+  a:hover {
+    color: #747bff;
+  }
+}
