@@ -260,6 +260,11 @@ export default function App() {
           <li>
             <a href="https://vite.dev/guide/">Vite Documentation</a>
           </li>
+          <li>
+            <a href="https://web.stanford.edu/class/cs142/lectures/ReactJS.pdf">
+              Introduction to ReactJS by Stanford CS142
+            </a>
+          </li>
         </ul>
       </section>
 

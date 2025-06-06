@@ -24,7 +24,7 @@ Verify your installation and clone this repository
 git -v
 
 # Clone this repository
-git clone xxx
+git clone https://github.com/ry2001/service-design-studio.git
 ```
 
 ### Install NodeJS
@@ -101,7 +101,7 @@ This web application has 4 pages:
 3. `Backend`
    - An introduction to backend development
 4. `Demo`
-   - A demonstration on how to build components. How to call APIs
+   - A demonstration on how to build components. How to call APIs.
 
 ## Remarks
 
@@ -111,9 +111,11 @@ You are welcome to suggest contents you think is helpful in your studio project.
 
 ## Other Resources
 
-### Database
+### Frontend
 
-Some popular databases you can use
+1. [Figma](https://www.figma.com/), you can find some useful resources [here](https://www.figma.com/resource-library/). Do note that Figma is for UX/UI design, not for development.
+
+### Database
 
 1. [mySQL](https://www.mysql.com/)
 2. [PostgreSQL](https://www.postgresql.org/)
@@ -133,3 +135,9 @@ Some hosting platform you can consider to use.
 1. [Vercel](https://vercel.com/)
 2. [Render](https://render.com/)
 3. [Netlify](https://www.netlify.com/)
+
+### Lectures Slides
+
+Lectures from other Universities, they covered more and better
+
+1. [Stanford CS142](https://web.stanford.edu/class/cs142/lectures.html)
