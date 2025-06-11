@@ -1,4 +1,5 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Header from "../components/header";
 import Introduction from "./introduction";
 import Frontend from "./frontend";
 import Backend from "./backend";
@@ -9,6 +10,7 @@ import ScrollToTop from "../components/scrollToTop.jsx";
 export default function App() {
   return (
     <BrowserRouter>
+      <Header />
       <div className="mx-80">
         <ScrollToTop />
         <Routes>
