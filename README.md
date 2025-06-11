@@ -92,16 +92,18 @@ python app.py
 
 ## Interact with the pages
 
-This web application has 4 pages:
+This web application has 5 pages (more coming up - hopefully):
 
 1. `Introduction`
    - An introduction to web development
-2. `Frontend`
-   - An introduction to frontend development
-3. `Backend`
-   - An introduction to backend development
-4. `Demo`
-   - A demonstration on how to build components. How to call APIs.
+2. `Introduction to Git`
+   - Introduction to Git and Github
+3. `Frontend`
+   - Introduction to frontend development
+4. `Backend`
+   - Introduction to backend development
+5. `Demo`
+   - Demonstration on how to build components. How to call APIs.
 
 ## Remarks
 
@@ -147,6 +149,6 @@ Lectures from other Universities, they covered more and better
 ## TODO list
 
 - [x] Frontend deployment for easy access
-- [ ] Introduction to Git
+- [x] Introduction to Git
 - [ ] Deploying the web application
 - [ ] FastAPI - (Thanks @Interpause raising this up: [Issue #1](https://github.com/ry2001/service-design-studio/issues/1))

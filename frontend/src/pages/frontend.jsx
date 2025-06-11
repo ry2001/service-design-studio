@@ -270,7 +270,7 @@ export default function App() {
 
       <section className="mb-6">
         <div className="flex justify-between">
-          <Button onClick={() => navigate("/")}>Prev Page</Button>
+          <Button onClick={() => navigate("/git")}>Prev Page</Button>
           <Button onClick={() => navigate("/backend")}>Next Page</Button>
         </div>
       </section>
