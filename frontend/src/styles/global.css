@@ -24,12 +24,12 @@ These are the default styles that you will be using.
 /* If you want to have all <a> tags to have the same style, you can preset it here */
 a {
   font-weight: 500;
-  color: #646cff;
+  color: #a3abff;
   text-decoration: inherit;
 }
 /* This is when you hover the <a> tag, text color will change accordingly */
 a:hover {
-  color: #535bf2;
+  color: #d1d4fa;
   cursor: pointer;
 }
 

@@ -5,7 +5,6 @@ export default function Header() {
 
   const showMenuNav =
     "fixed p-15 top-0 right-0 bg-blue-900 text-blue-100 h-screen flex flex-col items-center justify-center";
-  const hideMenuNav = "hidden";
 
   return (
     <header className="flex flex-col items-left p-4 bg-blue-900 w-full">
@@ -16,7 +15,7 @@ export default function Header() {
       <nav className="flex flex-col space-x-4 mt-2">
         <div>
           {isOpen ? (
-            <div className={isOpen ? showMenuNav : hideMenuNav}>
+            <div className={showMenuNav}>
               <ul className="flex flex-col items-center justify-between min-h-[250px]">
                 <li className="border-b border-gray-400 my-8 uppercase">
                   <a href="/" className="!text-blue-100">

@@ -13,27 +13,38 @@ export default function Demo() {
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState("");
 
+  const isDev = import.meta.env.MODE !== "production";
+
   // Fetch tasks on mount
   useEffect(() => {
-    fetchTasks();
+    if (isDev) {
+      fetchTasks();
+    }
   }, []);
 
   const fetchTasks = async () => {
+    if (!isDev) return;
+
     try {
       setLoading(true);
-      const res = await fetch(`${API_BASE}/api/task/`);
+      const res = await fetch(`${API_BASE}/api/task`);
       const data = await res.json();
       if (res.ok) {
         setTasks(data);
       }
     } catch (err) {
-      setError(err || "Failed to load tasks.");
+      setError(
+        "Failed to load tasks. Error Message:" +
+          (err.message ? `: ${err.message}` : "")
+      );
     } finally {
       setLoading(false);
     }
   };
 
   const handleDeleteTask = async (id) => {
+    if (!isDev) return;
+
     const res = await fetch(`${API_BASE}/api/task/${id}`, {
       method: "DELETE",
     });
@@ -46,6 +57,8 @@ export default function Demo() {
   };
 
   const handleCheckbox = async (task) => {
+    if (!isDev) return;
+
     console.log(`Toggling completion for task ${task.id}`);
     const res = await fetch(`${API_BASE}/api/task/${task.id}`, {
       method: "PUT",
