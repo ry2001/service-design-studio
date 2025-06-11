@@ -27,7 +27,7 @@ export default function Demo() {
         setTasks(data);
       }
     } catch (err) {
-      setError("Failed to load tasks.");
+      setError(err || "Failed to load tasks.");
     } finally {
       setLoading(false);
     }
