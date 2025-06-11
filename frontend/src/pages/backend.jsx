@@ -3,6 +3,11 @@ import { useNavigate } from "react-router-dom";
 
 import Button from "../components/button.jsx";
 
+import startBackend from "../assets/start_backend.png";
+import postman from "../assets/postman.png";
+import rapidAPI from "../assets/RapidAPI.png";
+import testAPIGif from "../assets/test_api.gif";
+
 export default function Backend() {
   const navigate = useNavigate();
 
@@ -112,7 +117,7 @@ if __name__ == "__main__":
         </p>
 
         <img
-          src="../src/assets/start_backend.png"
+          src={startBackend || "../src/assets/start_backend.png"}
           alt="Flask App"
           className="mt-4 rounded shadow"
         />
@@ -167,9 +172,13 @@ if __name__ == "__main__":
           <code>RapidAPI Client</code>.
         </p>
         <div className="flex flex-row gap-8 justify-center">
-          <img src="../src/assets/postman.png" alt="Postman" className="mt-4" />
           <img
-            src="../src/assets/RapidAPI.png"
+            src={postman || "../src/assets/postman.png"}
+            alt="Postman"
+            className="mt-4"
+          />
+          <img
+            src={rapidAPI || "../src/assets/RapidAPI.png"}
             alt="RapidAPI Client"
             className="mt-4"
           />
@@ -185,11 +194,10 @@ if __name__ == "__main__":
           test the APIs.
         </p>
         <img
-          src="../src/assets/test_api.gif"
+          src={testAPIGif || "../src/assets/test_api.gif"}
           alt="RapidAPI Demo"
           className="mt-4 rounded shadow"
         />
-        <p>Will update the gif later.</p>
       </section>
 
       <section className="mb-6">

@@ -1,11 +1,12 @@
 import { useState } from "react";
 
+import { Link } from "react-router-dom";
+
 export default function Header() {
   const [isOpen, setIsOpen] = useState(false);
 
   const showMenuNav =
     "fixed p-15 top-0 right-0 bg-blue-900 text-blue-100 h-screen flex flex-col items-center justify-center";
-  const hideMenuNav = "hidden";
 
   return (
     <header className="flex flex-col items-left p-4 bg-blue-900 w-full">
@@ -16,27 +17,43 @@ export default function Header() {
       <nav className="flex flex-col space-x-4 mt-2">
         <div>
           {isOpen ? (
-            <div className={isOpen ? showMenuNav : hideMenuNav}>
+            <div className={showMenuNav}>
               <ul className="flex flex-col items-center justify-between min-h-[250px]">
                 <li className="border-b border-gray-400 my-8 uppercase">
-                  <a href="/" className="!text-blue-100">
+                  <Link
+                    to="/"
+                    onClick={() => setIsOpen(false)}
+                    className="!text-blue-100"
+                  >
                     Introduction
-                  </a>
+                  </Link>
                 </li>
                 <li className="border-b border-gray-400 my-8 uppercase">
-                  <a href="/frontend" className="!text-blue-100 ">
+                  <Link
+                    to="/frontend"
+                    onClick={() => setIsOpen(false)}
+                    className="!text-blue-100 "
+                  >
                     Frontend
-                  </a>
+                  </Link>
                 </li>
                 <li className="border-b border-gray-400 my-8 uppercase">
-                  <a href="/backend" className="!text-blue-100 ">
+                  <Link
+                    to="/backend"
+                    onClick={() => setIsOpen(false)}
+                    className="!text-blue-100 "
+                  >
                     Backend
-                  </a>
+                  </Link>
                 </li>
                 <li className="border-b border-gray-400 my-8 uppercase">
-                  <a href="/demo" className="!text-blue-100 ">
+                  <Link
+                    to="/demo"
+                    onClick={() => setIsOpen(false)}
+                    className="!text-blue-100 "
+                  >
                     Demo
-                  </a>
+                  </Link>
                 </li>
               </ul>
             </div>

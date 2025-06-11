@@ -68,7 +68,7 @@ conda activate sds
 conda deactivate
 ```
 
-## Gettng Started
+## Getting Started
 
 1. Open 2 terminals (Terminal A and Terminal B)
 2. For Terminal A, we will be starting the frontend
@@ -109,6 +109,8 @@ This is the first time I am creating a tutorial for a course, and its an impromp
 
 You are welcome to suggest contents you think is helpful in your studio project. However, it might not be implemented (Your voice was heard, but got ignored -- just kidding, it depends on my availablility).
 
+(Update 11/6/2025) I have deployed the frontend for easy access. You can access the page through this [link](https://service-design-studio.vercel.app/). Do note that the backend is not deployed hence `demo` page will not be working. Lastly, the code is not production-ready.
+
 ## Other Resources
 
 ### Frontend
@@ -141,3 +143,10 @@ Some hosting platform you can consider to use.
 Lectures from other Universities, they covered more and better
 
 1. [Stanford CS142](https://web.stanford.edu/class/cs142/lectures.html)
+
+## TODO list
+
+- [x] Frontend deployment for easy access
+- [ ] Introduction to Git
+- [ ] Deploying the web application
+- [ ] FastAPI - (Thanks @Interpause raising this up: [Issue #1](https://github.com/ry2001/service-design-studio/issues/1))
