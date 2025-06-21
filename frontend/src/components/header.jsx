@@ -30,6 +30,15 @@ export default function Header() {
                 </li>
                 <li className="border-b border-gray-400 my-8 uppercase">
                   <Link
+                    to="/git"
+                    onClick={() => setIsOpen(false)}
+                    className="!text-blue-100"
+                  >
+                    Intro to Git
+                  </Link>
+                </li>
+                <li className="border-b border-gray-400 my-8 uppercase">
+                  <Link
                     to="/frontend"
                     onClick={() => setIsOpen(false)}
                     className="!text-blue-100 "

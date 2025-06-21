@@ -196,10 +196,7 @@ CORS(app)             # Allow cross-origin access to your Flask app
 
       <section className="mb-6">
         <div className="flex flex-row-reverse">
-          <Button
-            children={"Next Page"}
-            onClick={() => navigate("/frontend")}
-          />
+          <Button children={"Next Page"} onClick={() => navigate("/git")} />
         </div>
       </section>
     </div>
