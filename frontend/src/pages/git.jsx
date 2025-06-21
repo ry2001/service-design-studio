@@ -2,6 +2,7 @@ import React from "react";
 import { useNavigate } from "react-router-dom";
 
 import Button from "../components/button.jsx";
+import GitImage from "../assets/git.png";
 
 export default function GitIntro() {
   const navigate = useNavigate();
@@ -19,6 +20,13 @@ export default function GitIntro() {
           in your code over time. It allows developers to collaborate,
           experiment safely, and revert changes when needed.
         </p>
+
+        <blockquote>
+          Don't share your code through Telegram, you might regret. My friend's
+          group did that for this SDS project and their code was a disaster. If
+          your group has a "god coder" who can and willing to save your team
+          then you can choose to ignore my advice.
+        </blockquote>
       </section>
 
       {/* Key Concepts */}
@@ -241,6 +249,37 @@ __pycache__/
             <code>"Add form validation"</code> instead of <code>"update"</code>.
           </li>
         </ul>
+      </section>
+
+      <section className="mb-6">
+        <h2 className="text-xl font-semibold mb-2">📚 Other Tips</h2>
+        <p>
+          If you really cannot remember the git commands, VS Code has an
+          extension called "Source Control" that is a "GUI" for git.
+        </p>
+        <img
+          src={GitImage || "../src/assets/git.png"}
+          alt="Git Source Control"
+          className="mt-4 rounded shadow"
+        />
+        <ol className="list-decimal list-inside mt-2">
+          <li>
+            The input box is for you to enter your commit message. Once you are
+            done, click on the blue button to commit your changes.
+          </li>
+          <li>
+            Only the files here will be committed. If you hover over the file,
+            you can see a "-" sign, where you can unstage (don't commit) the
+            file.
+          </li>
+          <li>
+            Here are all the file you have changed. You can add the file to
+            "Staged Changes" by <code>git add</code> or hover over the file (you
+            should see 3 buttons) and click on the "+" sign. If you want to
+            discard all changes, you can click on the middle button (the back
+            arrow).
+          </li>
+        </ol>
       </section>
 
       <section className="mb-6">
